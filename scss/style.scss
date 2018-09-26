@@ -1,6 +1,8 @@
 $gold: #C08656;
 $dark-blue: #14192C;
-$white: #fff;
+$white: #FFF;
+$cream: #F2E4D9;
+$gray: #79726C;
 *{
     margin: 0;
     padding: 0;
@@ -119,14 +121,66 @@ nav{
             
          }
      }
-     .description{
-         a{
-             text-decoration: none;
-             color: $gold;
-         }
-     }
-     
     
 }
+.description{
+    a{
+        text-decoration: none;
+        color: $gold;
+    }
+}
 
-
+.special-services{
+    .col:nth-child(1){
+       img{
+           &:nth-child(1){
+                margin-top: 100px;
+           }
+           
+       }
+    }
+    .col:nth-child(2){
+        img{
+            &:nth-child(1){
+                margin-top: -300px;
+            }
+            &:nth-child(3){
+                margin-top: 100px;
+           }
+        }
+    }
+}
+.price-list{
+    h6{
+        color: $gold;
+    }
+    h4{
+        font-size: 2rem;
+    }
+    .prices{
+        color: $gold;
+    }
+    
+    
+    
+}
+.newsletter{
+    background-color: $gold;
+    color: $white;
+}
+.footer{
+    background-color: $cream;
+    .contact{
+        p{
+        line-height: 120%;
+        }
+    }
+    .opening-hours{
+        p{
+            span{
+                text-transform: uppercase;
+                color: $gray;
+            }
+        }
+    }
+}
