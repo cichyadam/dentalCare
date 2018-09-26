@@ -1,0 +1,132 @@
+$gold: #C08656;
+$dark-blue: #14192C;
+$white: #fff;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// navigation
+nav{
+    .nav-item{
+        color: $gold;
+        text-decoration: none;
+    }    
+    .contact-item{
+        background-color:$dark-blue;
+        color:$white;
+        border-radius: 20px;
+    }
+}
+//underline hover
+.hvr-undrln {
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    /* box-shadow: 0 0 1px transparent; */
+    position: relative;
+    overflow: hidden;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      background: $gold;
+      height: 2px;
+      -webkit-transition-property: left, right;
+      transition-property: left, right;
+      -webkit-transition-duration: .3s;
+      transition-duration: .3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    
+    &:active:before, &:focus:before, &:hover:before {
+      left: 0
+      ;
+      right: 0;
+    }
+  }
+ //landing page
+ .landing-page{
+    .hero-content{
+        position: relative;
+        text-align: center;
+        color:$white;
+        img{
+            margin-top: -400px;
+        }
+        .centered-content{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            h1{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 2.7rem;
+                line-height: 1.2;
+            }
+            button{
+                color: $gold;
+                border-radius: 18px;
+            }
+        }
+    }
+    .tooth-brush{
+        img{
+            width: 100%;
+            margin-left: -100px;
+            margin-top: 200px;
+        }
+    }
+ } 
+ //services
+ .services{
+     .col:nth-child(2){
+         z-index: -5;
+         img{
+             &:nth-child(1){
+                margin-left: -100px;
+             }
+             &:nth-child(2){
+                 margin-top: -50px;
+
+             }
+             &:nth-child(4){
+                margin-top: 100px;
+            }
+            &:nth-child(6){
+                margin-top: -500px;
+                
+            }
+            
+         }
+     }
+     .col:nth-child(1){
+         img{
+             &:nth-child(1){
+                margin-top: 50px;
+             }
+             &:nth-child(3){
+                 margin-top: 100px;
+             }
+            
+         }
+     }
+     .description{
+         a{
+             text-decoration: none;
+             color: $gold;
+         }
+     }
+     
+    
+}
+
+
