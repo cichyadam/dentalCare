@@ -239,21 +239,22 @@ nav .contact-item {
   background-color: #C08656;
   color: #FFF; }
   .newsletter .input-group {
-    position: relative; }
-    .newsletter .input-group input {
+    position: relative;
+    padding-left: 16px; }
+    .newsletter .input-group .form-control {
       width: 80%;
       border: none;
       border-radius: 20px; }
     .newsletter .input-group .input-group-btn {
-      margin-left: -110px;
-      margin-top: 1px; }
-    .newsletter .input-group button {
-      position: absolute;
-      z-index: 1;
-      width: 20%;
-      background-color: #14192C;
-      border: none;
-      border-radius: 20px; }
+      margin-left: -108px;
+      margin-top: 1.5px; }
+      .newsletter .input-group .input-group-btn button {
+        position: absolute;
+        z-index: 1;
+        width: 20%;
+        background-color: #14192C;
+        border: none;
+        border-radius: 20px; }
 
 /* footer */
 .footer .contact p {

@@ -19,7 +19,6 @@ $work-sans: 'Work Sans', sans-serif;
     font-family: $signika;
     font-weight: 300;
 }
-
 /* navigation */
 nav {
     .nav-item {
@@ -342,25 +341,27 @@ nav {
     color: $white;
     .input-group{
         position: relative;
-        input{
+        padding-left: 16px;
+        .form-control{
             width: 80%;
             border: none;
             border-radius: 20px;
         }
         .input-group-btn{
-            margin-left: -110px;
-            margin-top: 1px;
-        }
-        button{
-            position: absolute;
-            z-index: 1;
-            width: 20%;
-            background-color: $dark-blue;
-            border: none;
-            border-radius: 20px;
+            margin-left: -108px;
+            margin-top: 1.5px;
+            button{
+                position: absolute;
+                z-index: 1;
+                width: 20%;
+                background-color: $dark-blue;
+                border: none;
+                border-radius: 20px;
+            }
         }
     }
 }
+
 
 /* footer */
 .footer {
