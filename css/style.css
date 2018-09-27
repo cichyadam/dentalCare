@@ -96,6 +96,12 @@ nav .contact-item {
   background-color: #14192C;
   border-radius: 12px; }
 
+.rectangle-news {
+  height: 300px;
+  width: 500px;
+  background-color: #14192C;
+  border-radius: 12px; }
+
 /* services section */
 .services .col:nth-child(1) img:nth-child(1) {
   margin-top: 50px; }
@@ -216,10 +222,38 @@ nav .contact-item {
 .price-list .prices {
   color: #C08656; }
 
+/* news section */
+.news .rectangle-news {
+  margin-left: -100px; }
+
+.articles {
+  margin-top: -200px; }
+  .articles img {
+    border-radius: 12px; }
+  .articles p {
+    color: #C08656;
+    font-weight: 600; }
+
 /* newsletter section */
 .newsletter {
   background-color: #C08656;
   color: #FFF; }
+  .newsletter .input-group {
+    position: relative; }
+    .newsletter .input-group input {
+      width: 80%;
+      border: none;
+      border-radius: 20px; }
+    .newsletter .input-group .input-group-btn {
+      margin-left: -110px;
+      margin-top: 1px; }
+    .newsletter .input-group button {
+      position: absolute;
+      z-index: 1;
+      width: 20%;
+      background-color: #14192C;
+      border: none;
+      border-radius: 20px; }
 
 /* footer */
 .footer .contact p {

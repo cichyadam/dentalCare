@@ -136,6 +136,12 @@ nav {
     background-color: $dark-blue;
     border-radius: 12px;
 }
+.rectangle-news{
+    height:300px;
+    width: 500px;
+    background-color: $dark-blue;
+    border-radius: 12px;
+}
 
 /* services section */
 .services {
@@ -313,11 +319,47 @@ nav {
         color: $gold;
     }
 }
+/* news section */
+.news{
+    .rectangle-news{
+        margin-left: -100px;
+    }
+}
+.articles{
+    margin-top: -200px;
+    img{
+        border-radius: 12px;
+    }
+    p{
+        color: $gold;
+        font-weight: 600;
+    }
+}
 
 /* newsletter section */
 .newsletter {
     background-color: $gold;
     color: $white;
+    .input-group{
+        position: relative;
+        input{
+            width: 80%;
+            border: none;
+            border-radius: 20px;
+        }
+        .input-group-btn{
+            margin-left: -110px;
+            margin-top: 1px;
+        }
+        button{
+            position: absolute;
+            z-index: 1;
+            width: 20%;
+            background-color: $dark-blue;
+            border: none;
+            border-radius: 20px;
+        }
+    }
 }
 
 /* footer */
