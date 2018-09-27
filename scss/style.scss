@@ -3,181 +3,234 @@ $dark-blue: #14192C;
 $white: #FFF;
 $cream: #F2E4D9;
 $gray: #79726C;
-*{
+$bright: #f2f2f2;
+
+/* all */
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-// navigation
-nav{
-    .nav-item{
+
+/* navigation */
+nav {
+    .nav-item {
         color: $gold;
         text-decoration: none;
-    }    
-    .contact-item{
-        background-color:$dark-blue;
-        color:$white;
+    }
+
+    .contact-item {
+        background-color: $dark-blue;
+        color: $white;
         border-radius: 20px;
     }
 }
-//underline hover
+
+/* underline on hover in navigation anchors */
 .hvr-undrln {
     display: inline-block;
     vertical-align: middle;
     padding-bottom: 5px;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    /* box-shadow: 0 0 1px transparent; */
     position: relative;
     overflow: hidden;
+
     &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 50%;
-      right: 50%;
-      bottom: 0;
-      background: $gold;
-      height: 2px;
-      -webkit-transition-property: left, right;
-      transition-property: left, right;
-      -webkit-transition-duration: .3s;
-      transition-duration: .3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background: $gold;
+        height: 2px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: .3s;
+        transition-duration: .3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
     }
-    
-    &:active:before, &:focus:before, &:hover:before {
-      left: 0
-      ;
-      right: 0;
+
+    &:active:before,
+    &:focus:before,
+    &:hover:before {
+        left: 0;
+        right: 0;
     }
-  }
- //landing page
- .landing-page{
-    .hero-content{
+}
+
+/* landing page and its elements */
+.landing-page {
+    .hero-content {
         position: relative;
         text-align: center;
-        color:$white;
-        img{
-            margin-top: -400px;
-        }
-        .centered-content{
+        color: $white;
+
+        .centered-content {
             position: absolute;
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
-            h1{
+
+            h1 {
                 font-size: 1.2rem;
             }
-            p{
+
+            p {
                 font-size: 2.7rem;
                 line-height: 1.2;
             }
-            button{
+
+            button {
                 color: $gold;
                 border-radius: 18px;
             }
         }
     }
-    .tooth-brush{
-        img{
+
+    .tooth-brush {
+        img {
             width: 100%;
             margin-left: -100px;
             margin-top: 200px;
         }
     }
- } 
- //services
- .services{
-     .col:nth-child(2){
-         z-index: -5;
-         img{
-             &:nth-child(1){
-                margin-left: -100px;
-             }
-             &:nth-child(2){
-                 margin-top: -50px;
+}
 
-             }
-             &:nth-child(4){
+/* decoration elements */
+.rectangle-dark {
+    height: 850px;
+    width: 680px;
+    background-color: $dark-blue;
+    border-radius: 0 0 12px 12px;
+}
+
+.rectangle-bright {
+    height: 335px;
+    width: 480px;
+    background-color: $bright;
+    border-radius: 12px;
+
+}
+
+/* services section */
+.services {
+    .col:nth-child(1) {
+        img {
+            &:nth-child(1) {
+                margin-top: 50px;
+            }
+
+            &:nth-child(3) {
                 margin-top: 100px;
             }
-            &:nth-child(6){
-                margin-top: -500px;
-                
+
+        }
+    }
+
+    .col:nth-child(2) {
+        /* selecting imgs with nth child */
+        z-index: -5;
+
+        .rectangle-bright {
+            margin-left: -100px;
+        }
+
+        img {
+            &:nth-child(2) {
+                margin-top: -50px;
+
             }
-            
-         }
-     }
-     .col:nth-child(1){
-         img{
-             &:nth-child(1){
-                margin-top: 50px;
-             }
-             &:nth-child(3){
-                 margin-top: 100px;
-             }
-            
-         }
-     }
-    
+
+            &:nth-child(4) {
+                margin-top: 100px;
+            }
+
+            &:nth-child(6) {
+                margin-top: -500px;
+            }
+        }
+    }
 }
-.description{
-    a{
+
+/* decription about services above img */
+.description {
+    h6 {
+        color: $gray;
+    }
+
+    a {
         text-decoration: none;
         color: $gold;
     }
 }
 
-.special-services{
-    .col:nth-child(1){
-       img{
-           &:nth-child(1){
+/* special services section*/
+.special-services {
+    .col:nth-child(1) {
+        z-index: 0;
+        /* selecting imgs with nth child */
+        img {
+            &:nth-child(1) {
                 margin-top: 100px;
-           }
-           
-       }
+            }
+
+        }
+
+        .rectangle-bright {
+            margin-bottom: -180px;
+        }
     }
-    .col:nth-child(2){
-        img{
-            &:nth-child(1){
+
+    .col:nth-child(2) {
+        z-index: 10;
+        img {
+            &:nth-child(1) {
                 margin-top: -300px;
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 margin-top: 100px;
-           }
+            }
         }
     }
 }
-.price-list{
-    h6{
+
+/* price list section */
+.price-list {
+    h6 {
         color: $gold;
     }
-    h4{
+
+    h4 {
         font-size: 2rem;
     }
-    .prices{
+
+    .prices {
         color: $gold;
     }
-    
-    
-    
 }
-.newsletter{
+
+/* newsletter section */
+.newsletter {
     background-color: $gold;
     color: $white;
 }
-.footer{
+
+/* footer */
+.footer {
     background-color: $cream;
-    .contact{
-        p{
-        line-height: 120%;
+
+    .contact {
+        p {
+            line-height: 120%;
         }
     }
-    .opening-hours{
-        p{
-            span{
+
+    .opening-hours {
+        p {
+            span {
                 text-transform: uppercase;
                 color: $gray;
             }
