@@ -17,6 +17,11 @@ nav .contact-item {
   color: #FFF;
   border-radius: 20px; }
 
+/* background color class which applies after scroll */
+.white-bg-nav {
+  background-color: rgba(255, 255, 255, 0.93);
+  transition: background-color 1s ease 0s; }
+
 /* underline on hover in navigation anchors */
 .hvr-undrln {
   display: inline-block;

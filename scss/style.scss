@@ -31,7 +31,14 @@ nav {
         color: $white;
         border-radius: 20px;
     }
+    
+    
 }
+/* background color class which applies after scroll */
+.white-bg-nav {
+    background-color:rgba(255, 255, 255, 0.93);
+    transition: background-color 1s ease 0s;
+    }
 
 /* underline on hover in navigation anchors */
 .hvr-undrln {
@@ -43,7 +50,7 @@ nav {
     position: relative;
     overflow: hidden;
 
-    &:before {
+    &:before{
         content: "";
         position: absolute;
         z-index: -1;
@@ -392,3 +399,22 @@ nav {
         }
     }
 }
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    
+ }
