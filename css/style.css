@@ -7,6 +7,9 @@
   font-family: "Signika", sans-serif;
   font-weight: 300; }
 
+.gold {
+  color: #C08656; }
+
 /* navigation */
 nav .nav-item {
   color: #C08656;
@@ -16,6 +19,40 @@ nav .contact-item {
   background-color: #14192C;
   color: #FFF;
   border-radius: 20px; }
+
+/* mobile navigation with overlay */
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s; }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; }
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1; }
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px; }
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; }
 
 /* background color class which applies after scroll */
 .white-bg-nav {
@@ -46,7 +83,7 @@ nav .contact-item {
     transition-duration: .3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out; }
-  .hvr-undrln:active:before, .hvr-undrln:focus:before, .hvr-undrln:hover:before {
+  .hvr-undrln:active:before, .hvr-undrln:focus:before, .hvr-undrln:hover:before, .hvr-undrln.active:before {
     left: 0;
     right: 0; }
 
@@ -224,8 +261,8 @@ nav .contact-item {
 .price-list h4 {
   font-size: 2rem; }
 
-.price-list .prices {
-  color: #C08656; }
+.price-list table {
+  width: 100%; }
 
 /* news section */
 .news .rectangle-news {
@@ -275,3 +312,30 @@ nav .contact-item {
 
 .footer .copyright p {
   color: #a99f97; }
+
+@media (max-width: 575px) {
+  .rectangle-bright,
+  .rectangle-news {
+    display: none; } }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .rectangle-bright,
+  .rectangle-news {
+    display: none; } }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .rectangle-bright,
+  .rectangle-news {
+    display: none; } }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-nav span {
+    display: none; } }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbar-nav span {
+    display: none; } }

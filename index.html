@@ -14,7 +14,7 @@
     <title>Apollo Dental Care - Dentálna hygiena</title>
 </head>
 
-<body data-spy="scroll" data-target="#apollo-navbar" data-offset="30">
+<body data-spy="scroll" data-target="#apollo-navbar" data-offset="90">
     <!-- NAVBAR -->
     <nav id="apollo-navbar" class="navbar navbar-expand-lg bg-transparent fixed-top">
         <div class="container-fluid justify-content-end py-4">
@@ -24,6 +24,17 @@
                 <a class="nav-item nav-link hvr-undrln text-uppercase px-3" href="#price-list">cenník</a>
                 <a class="nav-item nav-link hvr-undrln text-uppercase px-3" href="#news">novinky</a>
                 <a class="nav-item nav-link text-uppercase px-4 btn contact-item" href="#footer">kontakt</a>
+                <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
+            </div>
+            <div id="mobile-navigation" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a class="text-uppercase onclick="closeNav()"" href="#services">služby</a>
+                    <a class="text-uppercase onclick="closeNav()"" href="#team">náš tím</a>
+                    <a class="text-uppercase onclick="closeNav()"" href="#price-list">cenník</a>
+                    <a class="text-uppercase onclick="closeNav()"" href="#news">novinky</a>
+                    <a class="text-uppercase onclick="closeNav()"" href="#footer">kontakt</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -57,13 +68,13 @@
                 <div class="description py-4 text-center">
                     <h6 class="text-uppercase">moderná</h6>
                     <h4 class="text-capitalize">záchovná stomatológia</h4>
-                    <a class="text-uppercase" href="">zistiť viac</a>
+                    <a class="text-uppercase hvr-undrln" href="">zistiť viac</a>
                 </div>
                 <img class="img-fluid" src="img/endodoncia.png" alt="endodoncia">
                 <div class="description py-4 text-center">
                     <h6 class="text-uppercase">spevnenie</h6>
                     <h4 class="text-capitalize">endodencia</h4>
-                    <a class="text-uppercase" href="">zistiť viac</a>
+                    <a class="text-uppercase hvr-undrln" href="">zistiť viac</a>
                 </div>
 
             </div>
@@ -73,7 +84,7 @@
                 <div class="description py-4 text-center">
                     <h6 class="text-uppercase">profesionálna</h6>
                     <h4 class="text-capitalize">dentálna hygiena</h4>
-                    <a class="text-uppercase" href="">zistiť viac</a>
+                    <a class="text-uppercase hvr-undrln" href="">zistiť viac</a>
                 </div>
 
 
@@ -88,27 +99,27 @@
         <div class="row">
             <div class="col-lg">
                 <div class="rectangle-bright"></div>
-                <img  class="img-fluid" src="img/bielenie.png" alt="bielenie">
+                <img class="img-fluid" src="img/bielenie.png" alt="bielenie">
                 <div class="description py-4 text-center">
                     <h6 class="text-uppercase">zubné</h6>
                     <h4 class="text-capitalize">bielenie</h4>
-                    <a class="text-uppercase" href="">zistiť viac</a>
+                    <a class="text-uppercase hvr-undrln" href="">zistiť viac</a>
                 </div>
 
 
             </div>
             <div class="col-lg">
-                <img  class="img-fluid" src="img/protetika.png" alt="protetika">
+                <img class="img-fluid" src="img/protetika.png" alt="protetika">
                 <div class="description py-4 text-center">
                     <h6 class="text-uppercase">ošetrenie</h6>
                     <h4 class="text-capitalize">protetika</h4>
-                    <a class="text-uppercase" href="">zistiť viac</a>
+                    <a class="text-uppercase hvr-undrln" href="">zistiť viac</a>
                 </div>
-                <img  class="img-fluid" src="img/spolupraca.png" alt="spolupraca">
+                <img class="img-fluid" src="img/spolupraca.png" alt="spolupraca">
                 <div class="description py-4 text-center">
                     <h6 class="text-uppercase">vzájomná</h6>
                     <h4 class="text-capitalize">spolupráca</h4>
-                    <a class="text-uppercase" href="">zistiť viac</a>
+                    <a class="text-uppercase hvr-undrln" href="">zistiť viac</a>
                 </div>
 
 
@@ -132,35 +143,35 @@
                 <div class="carousel-item active">
                     <img class="d-block" src="img/team.png" alt="First slide">
                     <div class="carousel-caption d-none d-md-block ">
-                            <div class="team-content">
-                                    <div class="rectangle-team"></div>
-                                        <div class="team-center-content pt-4">
-                                            <h6 class="text-uppercase pt-4">náš tím</h6>
-                                            <h4>MUDr. Juraj Karovič</h4>
-                                            <p class="text-uppercase py-4">
-                                                    "zakladám si na individuálnom <br>
-                                                    prístupe, familiárnom prostredí a <br>
-                                                    bezbolestnom ošetrení"
-                                            </p>
-                                        </div>
-                                </div>  
+                        <div class="team-content">
+                            <div class="rectangle-team"></div>
+                            <div class="team-center-content pt-4">
+                                <h6 class="text-uppercase pt-4">náš tím</h6>
+                                <h4>MUDr. Juraj Karovič</h4>
+                                <p class="text-uppercase py-4">
+                                    "zakladám si na individuálnom <br>
+                                    prístupe, familiárnom prostredí a <br>
+                                    bezbolestnom ošetrení"
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block" src="img/team.png" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
-                            <div class="team-content">
-                                    <div class="rectangle-team"></div>
-                                    <div class="team-center-content pt-4">
-                                            <h6 class="text-uppercase pt-4">náš tím</h6>
-                                            <h4>MUDr. Juraj Karovič</h4>
-                                            <p class="text-uppercase py-4">
-                                                    "zakladám si na individuálnom <br>
-                                                    prístupe, familiárnom prostredí a <br>
-                                                    bezbolestnom ošetrení"
-                                            </p>
-                                        </div>
-                                </div>  
+                        <div class="team-content">
+                            <div class="rectangle-team"></div>
+                            <div class="team-center-content pt-4">
+                                <h6 class="text-uppercase pt-4">náš tím</h6>
+                                <h4>MUDr. Juraj Karovič</h4>
+                                <p class="text-uppercase py-4">
+                                    "zakladám si na individuálnom <br>
+                                    prístupe, familiárnom prostredí a <br>
+                                    bezbolestnom ošetrení"
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -169,15 +180,15 @@
                         <div class="team-content">
                             <div class="rectangle-team"></div>
                             <div class="team-center-content pt-4">
-                                    <h6 class="text-uppercase pt-4">náš tím</h6>
-                                    <h4>MUDr. Juraj Karovič</h4>
-                                    <p class="text-uppercase py-4">
-                                            "zakladám si na individuálnom <br>
-                                            prístupe, familiárnom prostredí a <br>
-                                            bezbolestnom ošetrení"
-                                    </p>
-                                </div>
-                        </div>  
+                                <h6 class="text-uppercase pt-4">náš tím</h6>
+                                <h4>MUDr. Juraj Karovič</h4>
+                                <p class="text-uppercase py-4">
+                                    "zakladám si na individuálnom <br>
+                                    prístupe, familiárnom prostredí a <br>
+                                    bezbolestnom ošetrení"
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -199,44 +210,84 @@
         <h6 class="text-uppercase py-2">cenník</h6>
         <h4 class="pt-2"> Orientačný cenník <br> stomatologických výkonov</h4>
         <div class="row py-4">
-            <div class="col-2"></div>
-            <div class="col-4 text-uppercase text-left">
-                <p>preventívna prehliadka dieťa - vstupná</p>
-                <p>preventívna prehliadka dospelí - vstupná</p>
-                <p>dentálna hygiena</p>
-                <p>air - flow</p>
-                <p>rtg</p>
-                <p>anestézia</p>
-                <p>pečatenie zuba</p>
-                <p>amalgám</p>
-                <p>biele výplne</p>
-                <p>výplne koreňových kanálikov</p>
-                <p>chirurgické výkony</p>
-                <p>bielenie zubov</p>
-                <p>fixná protetika</p>
-                <p>snímatelná protetika</p>
-                <p>ozdoba na zub</p>
-                <p>fazety</p>
+            <div class="col-3"></div>
+            <div class="col-6 text-uppercase">
+                <table class="mx-auto">
+
+                    <tr>
+                        <td class="text-left">preventívna prehliadka dieťa - vstupná</td>
+                        <td class="text-right gold">10 - 15 &euro;</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">preventívna prehliadka dospelí - vstupná</td>
+                        <td class="text-right gold">15 - 29 &euro;</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">dentálna hygiena</td>
+                        <td class="text-right gold">11 - 70 &euro;</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">air - flow</td>
+                        <td class="text-right gold">40 &euro;</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">rtg</td>
+                        <td class="text-right gold">8.5 - 12 &euro;</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-left">anestézia</td>
+                        <td class="text-right gold">5 - 12 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">pečatenie zuba</td>
+                        <td class="text-right gold">16 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">amalgám</td>
+                        <td class="text-right gold">22 - 40 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">biele výplne</td>
+                        <td class="text-right gold">32 - 60 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">výplne koreňových kanálikov</td>
+                        <td class="text-right gold">40 - 120 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">chirurgické výkony</td>
+                        <td class="text-right gold">19 - 120 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">bielenie zubov</td>
+                        <td class="text-right gold">110 - 200 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">fixná protetika</td>
+                        <td class="text-right gold">146 - 300 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">snímatelná protetika</td>
+                        <td class="text-right gold">105 - 320 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">ozdoba na zub</td>
+                        <td class="text-right gold">27 - 60 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">fazety</td>
+                        <td class="text-right gold">100 - 240 &euro;</td>
+                    </tr>
+                </table>
+
             </div>
-            <div class="col-4 prices text-right">
-                <p>10 - 15 &euro;</p>
-                <p>15 - 29 &euro;</p>
-                <p>11 - 70 &euro;</p>
-                <p>40 &euro;</p>
-                <p>8.5 - 12 &euro;</p>
-                <p>5 - 12 &euro;</p>
-                <p>16 &euro;</p>
-                <p>22 - 40 &euro;</p>
-                <p>32 - 60 &euro;</p>
-                <p>40 - 120 &euro;</p>
-                <p>19 - 120 &euro;</p>
-                <p>110 - 200 &euro;</p>
-                <p>146 - 300 &euro;</p>
-                <p>105 - 320 &euro;</p>
-                <p>27 - 60 &euro;</p>
-                <p>100 - 240 &euro;</p>
-            </div>
-            <div class="col-2"></div>
+
+            <div class="col-3"></div>
         </div>
 
     </div>
@@ -254,23 +305,23 @@
 
         </div>
         <div class="row pt-4 articles">
-                <div class="col-lg-4">
-                    <img src="img/news01.png" alt="">
-                    <h5 class="pt-4">Lorem ipsum dollor 1</h5>
-                    <p>Mauris placerat eleifendleo</p>
-                </div>
-                <div class="col-lg-4">
-                        <img src="img/news02.png" alt="">
-                        <h5 class="pt-4">Lorem ipsum dollor 2 </h5>
-                        <p>Mauris placerat eleifendleo</p>
-                </div>
-                <div class="col-lg-4">
-                        <img src="img/news03.png" alt="">
-                        <h5 class="pt-4">Lorem ipsum dollor 3</h5>
-                        <p>Mauris placerat eleifendleo</p>
-                </div>
-    
+            <div class="col-lg-4">
+                <img src="img/news01.png" alt="">
+                <h5 class="pt-4">Lorem ipsum dollor 1</h5>
+                <p>Mauris placerat eleifendleo</p>
             </div>
+            <div class="col-lg-4">
+                <img src="img/news02.png" alt="">
+                <h5 class="pt-4">Lorem ipsum dollor 2 </h5>
+                <p>Mauris placerat eleifendleo</p>
+            </div>
+            <div class="col-lg-4">
+                <img src="img/news03.png" alt="">
+                <h5 class="pt-4">Lorem ipsum dollor 3</h5>
+                <p>Mauris placerat eleifendleo</p>
+            </div>
+
+        </div>
 
     </div>
     <!-- /NEWS -->
@@ -285,12 +336,12 @@
                         more.</p>
                 </div>
                 <div class="col-lg py-4">
-                        <div class="input-group pt-4">
-                                <input type="text" class="form-control" placeholder="Enter your email adress">
-                                <span class="input-group-btn">
-                                  <button class="btn btn-primary button-sgn-up" type="button">Sign up</button>
-                                </span>
-                              </div>
+                    <div class="input-group pt-4">
+                        <input type="text" class="form-control" placeholder="Enter your email adress">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary button-sgn-up" type="button">Sign up</button>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>

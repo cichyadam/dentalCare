@@ -9,3 +9,10 @@ $(document).ready(function() {
       }
     });
 });
+function openNav() {
+    document.getElementById("mobile-navigation").style.height = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("mobile-navigation").style.height = "0%";
+  }
