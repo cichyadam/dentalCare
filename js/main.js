@@ -13,21 +13,27 @@ $(document).ready(function() {
     let controller = new ScrollMagic.Controller();
     // build a scene
     let Scene01 = new ScrollMagic.Scene({
-        triggerElement: '.stomatology' 
+        triggerElement: '.stomatology',
+        triggerHook: 0.9,
+        reverse: !1 
     })
     .setClassToggle('.stomatology', 'fade-in')
     .setPin()
     .addTo(controller);
 
     let Scene02 = new ScrollMagic.Scene({
-        triggerElement: '.endodencia'
+        triggerElement: '.endodencia',
+        triggerHook: 0.9,
+        reverse: !1
     })
     .setClassToggle('.endodencia','fade-in-up')
     .setPin()
     .addTo(controller);
 
     let Scene03 = new ScrollMagic.Scene({
-        triggerElement: '.hygiena'
+        triggerElement: '.hygiena',
+        triggerHook: 0.9,
+        reverse: !1
     })
     .setClassToggle('.hygiena','fade-in')
     .setPin()
