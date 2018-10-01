@@ -9,6 +9,12 @@ $(document).ready(function() {
       }
     });
 });
+
+let hamburger = document.querySelector(".hamburger");
+  hamburger.addEventListener("click", function() {
+    hamburger.classList.toggle("is-active");
+  });
+
 function openNav() {
     document.getElementById("mobile-navigation").style.height = "100%";
   }
