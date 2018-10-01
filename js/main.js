@@ -26,16 +26,43 @@ $(document).ready(function() {
         triggerHook: 0.9,
         reverse: !1
     })
-    .setClassToggle('.endodencia','fade-in-up')
+    .setClassToggle('.endodencia','fade-in')
     .setPin()
     .addTo(controller);
 
     let Scene03 = new ScrollMagic.Scene({
         triggerElement: '.hygiena',
-        triggerHook: 0.9,
-        reverse: !1
+         triggerHook: 0.9,
+            reverse: !1
     })
     .setClassToggle('.hygiena','fade-in')
+    .setPin()
+    .addTo(controller);
+
+    let Scene04 = new ScrollMagic.Scene({
+        triggerElement: '.protetika',
+         triggerHook: 0.9,
+            reverse: !1
+    })
+    .setClassToggle('.protetika','fade-in')
+    .setPin()
+    .addTo(controller);
+
+    let Scene05 = new ScrollMagic.Scene({
+        triggerElement: '.bielenie',
+         triggerHook: 0.9,
+            reverse: !1
+    })
+    .setClassToggle('.bielenie','fade-in')
+    .setPin()
+    .addTo(controller);
+
+    let Scene06 = new ScrollMagic.Scene({
+        triggerElement: '.spolupraca',
+         triggerHook: 0.9,
+            reverse: !1
+    })
+    .setClassToggle('.spolupraca','fade-in')
     .setPin()
     .addTo(controller);
 

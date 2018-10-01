@@ -154,18 +154,14 @@ nav .contact-item {
   transform: translateX(200px);
   transition: all 1s ease-out; }
 
+.services .endodencia {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: all 1s ease-out; }
+
 .services .fade-in {
   opacity: 1;
   transform: translateX(0); }
-
-.services .endodencia {
-  opacity: 0;
-  transform: translateY(80px);
-  transition: all 1s ease-out; }
-
-.services .fade-in-up {
-  opacity: 1;
-  transform: translateY(0); }
 
 .services .col-lg:nth-child(2) {
   /* selecting imgs with nth child */
@@ -185,6 +181,25 @@ nav .contact-item {
 /* special services section*/
 .special-services img {
   border-radius: 12px; }
+
+.special-services .protetika {
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 1s ease-out; }
+
+.special-services .bielenie {
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 1s ease-out; }
+
+.special-services .spolupraca {
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 1s ease-out; }
+
+.special-services .fade-in {
+  opacity: 1;
+  transform: translateX(0); }
 
 .special-services .col-lg:nth-child(1) {
   /* selecting imgs with nth child */ }
