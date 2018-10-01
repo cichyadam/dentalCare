@@ -23,7 +23,7 @@ nav .contact-item {
 /* mobile navigation with overlay */
 .burger-menu {
   position: absolute;
-  top: 32px;
+  top: 20px;
   right: 23px;
   z-index: 12; }
 
