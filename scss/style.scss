@@ -38,6 +38,12 @@ nav {
     
 }
 /* mobile navigation with overlay */
+.burger-menu{
+    position: absolute;
+    top: 32px;
+    right: 23px;
+    z-index: 12;
+}
 .overlay {
     height: 0%;
     width: 100%;
@@ -52,28 +58,21 @@ nav {
   a {
       padding: 8px;
       text-decoration: none;
-      font-size: 36px;
-      color: #818181;
+      font-size: 2rem;
+      color: $white;
       display: block;
       transition: 0.3s;
       &:hover, &:focus {
-        color: #f1f1f1;
+        color: $gold;
       }
     }
-    .closebtn {
-      position: absolute;
-      top: 20px;
-      right: 45px;
-      font-size: 60px;
-    }
+ 
   }
   
   .overlay-content {
     position: relative;
-    top: 25%;
+    top: 20%;
     width: 100%;
-    text-align: center;
-    margin-top: 30px;
   }
   
 /* background color class which applies after scroll */
@@ -439,11 +438,16 @@ nav {
     .rectangle-dark{
         display: none;
     }
-    .navbar-nav{
+     .navbar-nav{
+        a{
         display: none;
+        }
     }
     .burger-menu{
         display: block;
+    }
+    #team{
+        display: none;
     }
  }
 
@@ -455,10 +459,15 @@ nav {
         display: none;
     }
     .navbar-nav{
+        a{
         display: none;
+        }
     }
     .burger-menu{
         display: block;
+    }
+    #team{
+        display: none;
     }
  }
 
@@ -470,10 +479,15 @@ nav {
         display: none;
     }
     .navbar-nav{
+        a{
         display: none;
+        }
     }
     .burger-menu{
         display: block;
+    }
+    #team{
+        display: none;
     }
     
  }
