@@ -9,6 +9,30 @@ $(document).ready(function() {
           $('.navbar').addClass('bg-transparent');
       }
     });
+
+    let controller = new ScrollMagic.Controller();
+    // build a scene
+    let Scene01 = new ScrollMagic.Scene({
+        triggerElement: '.stomatology' 
+    })
+    .setClassToggle('.stomatology', 'fade-in')
+    .setPin()
+    .addTo(controller);
+
+    let Scene02 = new ScrollMagic.Scene({
+        triggerElement: '.endodencia'
+    })
+    .setClassToggle('.endodencia','fade-in-up')
+    .setPin()
+    .addTo(controller);
+
+    let Scene03 = new ScrollMagic.Scene({
+        triggerElement: '.hygiena'
+    })
+    .setClassToggle('.hygiena','fade-in')
+    .setPin()
+    .addTo(controller);
+
 });
 //toggling class of burger menu -> open/close nav
 let hamburger = document.querySelector(".hamburger");

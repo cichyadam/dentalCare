@@ -22,6 +22,7 @@ $work-sans: 'Work Sans', sans-serif;
 .gold{
     color:$gold;
 }
+
 /* navigation */
 nav {
     .nav-item {
@@ -193,6 +194,30 @@ nav {
 .services {
     img{
         border-radius: 12px;
+        
+    }
+    .stomatology{
+        opacity: 0;
+        transform: translateX(-300px);
+        transition: all 1s ease-out;
+    }
+    .hygiena{
+        opacity: 0;
+        transform: translateX(200px);
+        transition: all 1s ease-out;
+    }
+    .fade-in{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .endodencia{
+        opacity: 0;
+        transform: translateY(80px);
+        transition: all 1s ease-out;
+    }
+    .fade-in-up{
+        opacity: 1;
+        transform: translateY(0);
     }
     
 
@@ -222,6 +247,7 @@ nav {
 .special-services {
     img{
         border-radius: 12px;
+        
     }
     .col-lg:nth-child(1) {
         /* selecting imgs with nth child */
