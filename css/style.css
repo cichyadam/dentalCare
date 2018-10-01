@@ -22,9 +22,6 @@ nav .contact-item {
 
 /* mobile navigation with overlay */
 .burger-menu {
-  position: absolute;
-  top: 20px;
-  right: 23px;
   z-index: 12; }
 
 .overlay {
@@ -83,8 +80,8 @@ nav .contact-item {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out; }
   .hvr-undrln:active:before, .hvr-undrln:focus:before, .hvr-undrln:hover:before, .hvr-undrln.active:before {
-    left: 0;
-    right: 0; }
+    left: 20%;
+    right: 20%; }
 
 /* landing page and its elements */
 .landing-page .hero-content {
@@ -243,13 +240,13 @@ nav .contact-item {
   left: 64%;
   top: 80%; }
   .carousel-control-prev .carousel-control-prev-icon {
-    background-image: url(../img/left-arrow.png); }
+    background-image: url(../img/left-arrow.svg); }
 
 .carousel-control-next {
   top: 80%;
   right: 17%; }
   .carousel-control-next .carousel-control-next-icon {
-    background-image: url(../img/right-arrow.png); }
+    background-image: url(../img/right-arrow.svg); }
 
 /* price list section */
 .price-list h6 {
@@ -277,6 +274,8 @@ nav .contact-item {
 .newsletter {
   background-color: #C08656;
   color: #FFF; }
+  .newsletter .mail-form {
+    padding-right: 115px; }
   .newsletter .input-group {
     position: relative;
     padding-left: 16px; }
@@ -285,12 +284,13 @@ nav .contact-item {
       border: none;
       border-radius: 20px; }
     .newsletter .input-group .input-group-btn {
-      margin-left: -108px;
+      margin-left: -109px;
       margin-top: 1.5px; }
       .newsletter .input-group .input-group-btn button {
         position: absolute;
         z-index: 1;
         width: 20%;
+        height: 55%;
         background-color: #14192C;
         border: none;
         border-radius: 20px; }

@@ -39,9 +39,6 @@ nav {
 }
 /* mobile navigation with overlay */
 .burger-menu{
-    position: absolute;
-    top: 20px;
-    right: 23px;
     z-index: 12;
 }
 .overlay {
@@ -112,8 +109,8 @@ nav {
     &:focus:before,
     &:hover:before,
     &.active:before {
-        left: 0;
-        right: 0;
+        left: 20%;
+        right: 20%;
     }
 }
 
@@ -323,14 +320,14 @@ nav {
     left: 64%;
     top: 80%;
     .carousel-control-prev-icon{
-        background-image: url(../img/left-arrow.png);
+        background-image: url(../img/left-arrow.svg);
     }
 }
 .carousel-control-next{
     top: 80%;
     right: 17%;
     .carousel-control-next-icon{
-        background-image: url(../img/right-arrow.png)
+        background-image: url(../img/right-arrow.svg)
     }
 }
 /* price list section */
@@ -367,6 +364,9 @@ nav {
 .newsletter {
     background-color: $gold;
     color: $white;
+    .mail-form{
+        padding-right: 115px;
+    }
     .input-group{
         position: relative;
         padding-left: 16px;
@@ -376,12 +376,13 @@ nav {
             border-radius: 20px;
         }
         .input-group-btn{
-            margin-left: -108px;
+            margin-left: -109px;
             margin-top: 1.5px;
             button{
                 position: absolute;
                 z-index: 1;
                 width: 20%;
+                height: 55%;
                 background-color: $dark-blue;
                 border: none;
                 border-radius: 20px;
