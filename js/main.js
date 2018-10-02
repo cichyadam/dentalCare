@@ -1,5 +1,7 @@
 //after scrolling 200px, navbar will get a background
 $(document).ready(function() {
+    let btn = $('#button');
+
     $(window).scroll(function() {
       if($(this).scrollTop() > 200) { 
           $('.navbar').addClass('white-bg-nav');
@@ -8,7 +10,20 @@ $(document).ready(function() {
           $('.navbar').removeClass('white-bg-nav');
           $('.navbar').addClass('bg-transparent');
       }
+      if ($(this).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
     });
+    //scroll to top   
+    
+    btn.on('click', function(e) {
+      e.preventDefault();
+      $('html,body').animate({scrollTop:0}, '300');
+    });
+    
+    
 
     let controller = new ScrollMagic.Controller();
     // build a scene

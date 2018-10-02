@@ -23,9 +23,7 @@ $work-sans: 'Work Sans', sans-serif;
     color:$gold;
 }
 /* navigation */
-.logo{
-    width:50%;
-}
+
 nav {
     .nav-item {
         color: $gold;
@@ -40,6 +38,40 @@ nav {
     
     
 }
+/* scroll to top */
+#button {
+    display: inline-block;
+    height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    img{
+        z-index: 2000;
+    }
+  }
+  #button::after {
+    content: "\f077";
+    font-size: 2em;
+    line-height: 50px;
+    color: transparent;
+  }
+  #button:hover {
+    cursor: pointer;
+    
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
 /* mobile navigation with overlay */
 .burger-menu{
     z-index: 12;
@@ -426,7 +458,7 @@ nav {
             margin-top: 1.5px;
             button{
                 position: absolute;
-                z-index: 1;
+                z-index: 10;
                 width: 20%;
                 height: 55%;
                 background-color: $dark-blue;
@@ -547,6 +579,8 @@ nav {
     }
     /* services section */
 .services {
+   
+ 
     .col-lg:nth-child(1) {
         img {
             &:nth-child(1) {
@@ -567,6 +601,7 @@ nav {
         .rectangle-bright {
             margin-left: -100px;
         }
+        
 
         img {
             &:nth-child(2) {
