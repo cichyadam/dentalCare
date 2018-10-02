@@ -11,6 +11,9 @@
   color: #C08656; }
 
 /* navigation */
+.logo {
+  width: 50%; }
+
 nav .nav-item {
   color: #C08656;
   text-decoration: none; }
