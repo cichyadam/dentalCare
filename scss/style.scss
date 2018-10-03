@@ -25,6 +25,11 @@ sans-serif;
 .gold {
     color: $gold;
 }
+.heading-services,
+.heading-services-mobile,
+.heading-spec-services{
+    letter-spacing: 3px;
+}
 
 /* navigation */
 
@@ -600,6 +605,12 @@ nav {
     #team {
         display: none;
     }
+    .heading-services{
+        display:none;
+    }
+    .heading-services-mobile{
+        letter-spacing: 3px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -624,11 +635,16 @@ nav {
     #team {
         display: none;
     }
+    .heading-services{
+        display:none;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .heading-services{
+        display:none;
+    }
     .rectangle-bright,
     .rectangle-news,
     .rectangle-dark {
@@ -666,15 +682,18 @@ nav {
             margin-left: 150px;
             letter-spacing: 3px;
         }
+        .heading-services-mobile{
+            display: none;
+        }
         
         .col-lg:nth-child(1) {
            
             img {
-                &:nth-child(1) {
+                &:nth-child(2) {
                     margin-top: 50px;
                 }
 
-                &:nth-child(3) {
+                &:nth-child(4) {
                     margin-top: 100px;
                 }
 
@@ -736,7 +755,7 @@ nav {
 
             img {
                 &:nth-child(2) {
-                    margin-top: -700px;
+                    margin-top: -550px;
                 }
 
                 &:nth-child(4) {
@@ -770,14 +789,17 @@ nav {
             margin-left: 150px;
             letter-spacing: 3px;
         }
+        .heading-services-mobile{
+            display: none;
+        }
         
         .col-lg:nth-child(1) {
             img {
-                &:nth-child(1) {
+                &:nth-child(2) {
                     margin-top: 50px;
                 }
 
-                &:nth-child(3) {
+                &:nth-child(4) {
                     margin-top: 100px;
                 }
 
@@ -836,7 +858,7 @@ nav {
 
             img {
                 &:nth-child(2) {
-                    margin-top: -700px;
+                    margin-top: -550px;
                 }
 
                 &:nth-child(4) {
