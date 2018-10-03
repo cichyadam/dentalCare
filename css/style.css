@@ -433,6 +433,11 @@ nav .contact-item {
   .burger-menu {
     display: none; }
   /* services section */
+  .services .heading-services {
+    margin-top: -200px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    letter-spacing: 3px; }
   .services .col-lg:nth-child(1) img:nth-child(1) {
     margin-top: 50px; }
   .services .col-lg:nth-child(1) img:nth-child(3) {
@@ -441,7 +446,9 @@ nav .contact-item {
     /* selecting imgs with nth child */
     z-index: -1; }
     .services .col-lg:nth-child(2) .rectangle-bright {
-      margin-left: -100px; }
+      margin-left: -100px;
+      z-index: -10;
+      position: relative; }
     .services .col-lg:nth-child(2) img:nth-child(2) {
       margin-top: -50px; }
     .services .col-lg:nth-child(2) img:nth-child(4) {
@@ -449,12 +456,16 @@ nav .contact-item {
     .services .col-lg:nth-child(2) img:nth-child(6) {
       margin-top: -500px; }
   /* special services section*/
+  .special-services .heading-spec-services {
+    margin-bottom: 100px;
+    margin-top: 70px;
+    letter-spacing: 3px; }
   .special-services .col-lg:nth-child(1) {
     /* selecting imgs with nth child */ }
     .special-services .col-lg:nth-child(1) img {
       position: relative; }
       .special-services .col-lg:nth-child(1) img:nth-child(1) {
-        margin-top: 100px; }
+        margin-top: 200px; }
   .special-services .col-lg:nth-child(2) {
     z-index: -1; }
     .special-services .col-lg:nth-child(2) img:nth-child(2) {
@@ -471,6 +482,11 @@ nav .contact-item {
   .burger-menu {
     display: none; }
   /* services section */
+  .services .heading-services {
+    margin-top: -200px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    letter-spacing: 3px; }
   .services .col-lg:nth-child(1) img:nth-child(1) {
     margin-top: 50px; }
   .services .col-lg:nth-child(1) img:nth-child(3) {
@@ -487,12 +503,16 @@ nav .contact-item {
     .services .col-lg:nth-child(2) img:nth-child(6) {
       margin-top: -500px; }
   /* special services section*/
+  .special-services .heading-spec-services {
+    margin-bottom: 100px;
+    margin-top: 70px;
+    letter-spacing: 3px; }
   .special-services .col-lg:nth-child(1) {
     /* selecting imgs with nth child */ }
     .special-services .col-lg:nth-child(1) img {
       position: relative; }
       .special-services .col-lg:nth-child(1) img:nth-child(1) {
-        margin-top: 100px; }
+        margin-top: 200px; }
   .special-services .col-lg:nth-child(2) {
     z-index: -1; }
     .special-services .col-lg:nth-child(2) img:nth-child(2) {

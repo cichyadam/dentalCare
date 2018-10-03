@@ -660,9 +660,15 @@ nav {
 
     /* services section */
     .services {
-
-
+        .heading-services{
+            margin-top: -200px;
+            margin-bottom: 100px;
+            margin-left: 150px;
+            letter-spacing: 3px;
+        }
+        
         .col-lg:nth-child(1) {
+           
             img {
                 &:nth-child(1) {
                     margin-top: 50px;
@@ -681,6 +687,8 @@ nav {
 
             .rectangle-bright {
                 margin-left: -100px;
+                z-index: -10;
+                position: relative;
             }
 
 
@@ -703,6 +711,11 @@ nav {
 
     /* special services section*/
     .special-services {
+        .heading-spec-services{
+            margin-bottom: 100px;
+            margin-top: 70px;
+            letter-spacing: 3px;
+        }
         .col-lg:nth-child(1) {
 
             /* selecting imgs with nth child */
@@ -710,7 +723,7 @@ nav {
                 position: relative;
 
                 &:nth-child(1) {
-                    margin-top: 100px;
+                    margin-top: 200px;
                 }
 
             }
@@ -751,6 +764,13 @@ nav {
 
     /* services section */
     .services {
+        .heading-services{
+            margin-top: -200px;
+            margin-bottom: 100px;
+            margin-left: 150px;
+            letter-spacing: 3px;
+        }
+        
         .col-lg:nth-child(1) {
             img {
                 &:nth-child(1) {
@@ -791,6 +811,11 @@ nav {
 
     /* special services section*/
     .special-services {
+        .heading-spec-services{
+            margin-bottom: 100px;
+            margin-top: 70px;
+            letter-spacing: 3px;
+        }
         .col-lg:nth-child(1) {
 
             /* selecting imgs with nth child */
@@ -798,7 +823,7 @@ nav {
                 position: relative;
 
                 &:nth-child(1) {
-                    margin-top: 100px;
+                    margin-top: 200px;
                 }
 
             }
