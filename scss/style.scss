@@ -239,7 +239,7 @@ nav {
 .rectangle-team {
     z-index: -5;
     height: 550px;
-    width: 650px;
+    width: 500px;
     background-color: $dark-blue;
     border-radius: 12px;
 
@@ -255,7 +255,7 @@ nav {
 /* services section */
 .services {
     img {
-        border-radius: 12px;
+        border-radius: 20px;
 
     }
 
@@ -311,7 +311,7 @@ nav {
 /* special services section*/
 .special-services {
     img {
-        border-radius: 12px;
+        border-radius: 20px;
 
     }
 
@@ -357,113 +357,214 @@ nav {
 
 /* team section */
 
-.team {
-    img {
-        position: relative;
-        border-radius: 12px;
-        z-index: 100;
+.card {
+    margin: 0 auto;
+    border: none;
+    width: 80vw;
+    /* number indicators in slideshow of team members and its positioning */
+    .carousel-indicators {
+        left: 600px;
+        bottom: 500px;
     }
-   
+    .carousel-indicators-numbers {
+            li {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                text-indent: 0;
+                margin: 0 2px;
+                width: 30px;
+                height: 30px;
+                border: none;
+                border-radius: 100%;
+                line-height: 30px;
+                color: $dark-gray;
+                background-color: transparent;
+                transition: all 0.25s ease;
+        
+                span {
+                    display: none;
+                }
+        
+                &.active,
+                &:hover {
+                    color: $white;
+                    margin: 0 2px;
+                    width: 30px;
+                    height: 30px;
+                    background-color: transparent;
+        
+                    span {
+                        height: 2px;
+                        width: 12px;
+                        background-color: $gold;
+                        padding-left: 1px;
+                        margin-top: 15px;
+                        display: block;
+                        color: $gold;
+                    }
+                }
+            }
+        }
+
+    .carousel-item {
+        height: 80vh;
+        width: 100vw;
+    }
+
+    .carousel-caption {
+        padding: 0;
+        right: 0;
+        left: 0;
+        color: $black;
+
+        img {
+            border-radius: 20px;
+        }
+        p {
+            line-height: 30px;
+        }
+
+        .desc-team {
+            text-align: center;
+            margin-top: 10%;
+            margin-left: -10%;
+        }
+    }
+    .navi{
+        .carousel-control-prev-icon {
+            background-image: url(../img/left-arrow.svg);
+        }
+        .carousel-control-next-icon {
+            background-image: url(../img/right-arrow.svg)
+        }
+
+    }
     
-    /* content inside dark blue rectangle */
-    .team-content {
-       
-        .team-center-content {
-            position: absolute;
-            top: 55%;
-            left: 55%;
-            padding: 0 30px;
-            transform: translate(-50%, -50%);
-
-            h6 {
-                color: $gold;
-                letter-spacing: 2px;
-            }
-
-            h4 {
-                font-size: 1.5rem;
-            }
-            
-            /* arrows in slideshow */
-            .arrows {
-               padding-top: 100px;
-               padding-left: 100px;
-              
-            
-
-                .carousel-control-next,
-                .carousel-control-prev {
-                    position: relative;
-                    display: inline-block;
-
-                }
-
-                .carousel-control-prev {
-
-                    .carousel-control-prev-icon {
-                        background-image: url(../img/left-arrow.svg);
-                    }
-                }
-
-                .carousel-control-next {
-
-
-                    .carousel-control-next-icon {
-                        background-image: url(../img/right-arrow.svg)
-                    }
-                }
-            }
-
-        }
-    }
-
 }
 
-/* number indicators in slideshow of team members and its positioning */
-.carousel-indicators {
-    left: 500px;
-    bottom: 550px;
+
+.card .carousel-caption .col-sm-3 {
+    display: flex;
+    align-items: center;
 }
 
-.carousel-indicators-numbers {
-    li {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        text-indent: 0;
-        margin: 0 2px;
-        width: 30px;
-        height: 30px;
-        border: none;
-        border-radius: 100%;
-        line-height: 30px;
-        color: $dark-gray;
-        background-color: transparent;
-        transition: all 0.25s ease;
-
-        span {
-            display: none;
-        }
-
-        &.active,
-        &:hover {
-            color: $white;
-            margin: 0 2px;
-            width: 30px;
-            height: 30px;
-            background-color: transparent;
-
-            span {
-                height: 2px;
-                width: 12px;
-                background-color: $gold;
-                padding-left: 1px;
-                margin-top: 15px;
-                display: block;
-                color: $gold;
-            }
-        }
-    }
+.card .carousel-caption .col-sm-9 {
+    text-align: left;
 }
+
+.navi a {
+    text-decoration: none;
+}
+
+
+
+// .team {
+//     img {
+//         position: relative;
+//         border-radius: 12px;
+//         z-index: 100;
+//     }
+
+
+//     /* content inside dark blue rectangle */
+//     .team-content {
+
+//         .team-center-content {
+//             position: absolute;
+//             top: 55%;
+//             left: 55%;
+//             padding: 0 30px;
+//             transform: translate(-50%, -50%);
+
+//             h6 {
+//                 color: $gold;
+//                 letter-spacing: 2px;
+//             }
+
+//             h4 {
+//                 font-size: 1.5rem;
+//             }
+
+//             /* arrows in slideshow */
+//             .arrows {
+//                padding-top: 100px;
+//                padding-left: 100px;
+
+
+
+//                 .carousel-control-next,
+//                 .carousel-control-prev {
+//                     position: relative;
+//                     display: inline-block;
+
+//                 }
+
+//                 .carousel-control-prev {
+
+//                     .carousel-control-prev-icon {
+//                         background-image: url(../img/left-arrow.svg);
+//                     }
+//                 }
+
+//                 .carousel-control-next {
+
+
+//                     .carousel-control-next-icon {
+//                         background-image: url(../img/right-arrow.svg)
+//                     }
+//                 }
+//             }
+
+//         }
+//     }
+
+// }
+
+// /* number indicators in slideshow of team members and its positioning */
+// .carousel-indicators {
+//     left: 500px;
+//     bottom: 550px;
+// }
+
+// .carousel-indicators-numbers {
+//     li {
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//         text-indent: 0;
+//         margin: 0 2px;
+//         width: 30px;
+//         height: 30px;
+//         border: none;
+//         border-radius: 100%;
+//         line-height: 30px;
+//         color: $dark-gray;
+//         background-color: transparent;
+//         transition: all 0.25s ease;
+
+//         span {
+//             display: none;
+//         }
+
+//         &.active,
+//         &:hover {
+//             color: $white;
+//             margin: 0 2px;
+//             width: 30px;
+//             height: 30px;
+//             background-color: transparent;
+
+//             span {
+//                 height: 2px;
+//                 width: 12px;
+//                 background-color: $gold;
+//                 padding-left: 1px;
+//                 margin-top: 15px;
+//                 display: block;
+//                 color: $gold;
+//             }
+//         }
+//     }
+// }
 
 
 
@@ -498,7 +599,7 @@ nav {
 
 .articles {
     img {
-        border-radius: 12px;
+        border-radius: 20px;
     }
 
     p {
@@ -609,7 +710,7 @@ nav {
         display: block;
     }
 
-  
+
 
     .heading-services {
         display: none;
@@ -639,7 +740,7 @@ nav {
         display: block;
     }
 
-  
+
 
     .heading-services {
         display: none;

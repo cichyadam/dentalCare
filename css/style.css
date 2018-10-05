@@ -168,7 +168,7 @@ nav .contact-item {
 .rectangle-team {
   z-index: -5;
   height: 550px;
-  width: 650px;
+  width: 500px;
   background-color: #14192C;
   border-radius: 12px; }
 
@@ -180,7 +180,7 @@ nav .contact-item {
 
 /* services section */
 .services img {
-  border-radius: 12px; }
+  border-radius: 20px; }
 
 .services .stomatology {
   opacity: 0;
@@ -219,7 +219,7 @@ nav .contact-item {
 
 /* special services section*/
 .special-services img {
-  border-radius: 12px; }
+  border-radius: 20px; }
 
 .special-services .protetika {
   opacity: 0;
@@ -249,70 +249,73 @@ nav .contact-item {
   z-index: -1; }
 
 /* team section */
-.team {
-  /* content inside dark blue rectangle */ }
-  .team img {
-    position: relative;
-    border-radius: 12px;
-    z-index: 100; }
-  .team .team-content .team-center-content {
-    position: absolute;
-    top: 55%;
-    left: 55%;
-    padding: 0 30px;
-    transform: translate(-50%, -50%);
-    /* arrows in slideshow */ }
-    .team .team-content .team-center-content h6 {
-      color: #C08656;
-      letter-spacing: 2px; }
-    .team .team-content .team-center-content h4 {
-      font-size: 1.5rem; }
-    .team .team-content .team-center-content .arrows {
-      padding-top: 100px;
-      padding-left: 100px; }
-      .team .team-content .team-center-content .arrows .carousel-control-next,
-      .team .team-content .team-center-content .arrows .carousel-control-prev {
-        position: relative;
-        display: inline-block; }
-      .team .team-content .team-center-content .arrows .carousel-control-prev .carousel-control-prev-icon {
-        background-image: url(../img/left-arrow.svg); }
-      .team .team-content .team-center-content .arrows .carousel-control-next .carousel-control-next-icon {
-        background-image: url(../img/right-arrow.svg); }
-
-/* number indicators in slideshow of team members and its positioning */
-.carousel-indicators {
-  left: 500px;
-  bottom: 550px; }
-
-.carousel-indicators-numbers li {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  text-indent: 0;
-  margin: 0 2px;
-  width: 30px;
-  height: 30px;
+.card {
+  margin: 0 auto;
   border: none;
-  border-radius: 100%;
-  line-height: 30px;
-  color: #434756;
-  background-color: transparent;
-  transition: all 0.25s ease; }
-  .carousel-indicators-numbers li span {
-    display: none; }
-  .carousel-indicators-numbers li.active, .carousel-indicators-numbers li:hover {
-    color: #FFF;
+  width: 80vw;
+  /* number indicators in slideshow of team members and its positioning */ }
+  .card .carousel-indicators {
+    left: 600px;
+    bottom: 500px; }
+  .card .carousel-indicators-numbers li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-indent: 0;
     margin: 0 2px;
     width: 30px;
     height: 30px;
-    background-color: transparent; }
-    .carousel-indicators-numbers li.active span, .carousel-indicators-numbers li:hover span {
-      height: 2px;
-      width: 12px;
-      background-color: #C08656;
-      padding-left: 1px;
-      margin-top: 15px;
-      display: block;
-      color: #C08656; }
+    border: none;
+    border-radius: 100%;
+    line-height: 30px;
+    color: #434756;
+    background-color: transparent;
+    transition: all 0.25s ease; }
+    .card .carousel-indicators-numbers li span {
+      display: none; }
+    .card .carousel-indicators-numbers li.active, .card .carousel-indicators-numbers li:hover {
+      color: #FFF;
+      margin: 0 2px;
+      width: 30px;
+      height: 30px;
+      background-color: transparent; }
+      .card .carousel-indicators-numbers li.active span, .card .carousel-indicators-numbers li:hover span {
+        height: 2px;
+        width: 12px;
+        background-color: #C08656;
+        padding-left: 1px;
+        margin-top: 15px;
+        display: block;
+        color: #C08656; }
+  .card .carousel-item {
+    height: 80vh;
+    width: 100vw; }
+  .card .carousel-caption {
+    padding: 0;
+    right: 0;
+    left: 0;
+    color: #000; }
+    .card .carousel-caption img {
+      border-radius: 20px; }
+    .card .carousel-caption p {
+      line-height: 30px; }
+    .card .carousel-caption .desc-team {
+      text-align: center;
+      margin-top: 10%;
+      margin-left: -10%; }
+  .card .navi .carousel-control-prev-icon {
+    background-image: url(../img/left-arrow.svg); }
+  .card .navi .carousel-control-next-icon {
+    background-image: url(../img/right-arrow.svg); }
+
+.card .carousel-caption .col-sm-3 {
+  display: flex;
+  align-items: center; }
+
+.card .carousel-caption .col-sm-9 {
+  text-align: left; }
+
+.navi a {
+  text-decoration: none; }
 
 /* price list section */
 .price-list h6 {
@@ -334,7 +337,7 @@ nav .contact-item {
   margin-left: -100px; }
 
 .articles img {
-  border-radius: 12px; }
+  border-radius: 20px; }
 
 .articles p {
   color: #C08656;

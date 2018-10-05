@@ -101,6 +101,7 @@ let hamburger = document.querySelector(".hamburger");
             closeNav();
         });
       });
+
    
 function openNav() {
     document.getElementById("mobile-navigation").style.height = "100%";
@@ -109,3 +110,13 @@ function openNav() {
   function closeNav() {
     document.getElementById("mobile-navigation").style.height = "0%";
   }
+
+  $("#slider").on('slide.bs.carousel', function(evt) {
+
+    var step = $(evt.relatedTarget).index();
+
+    $('#slider_captions .carousel-caption:not(#caption-'+step+')').fadeOut('fast', function() {
+            $('#caption-'+step).fadeIn();
+    });
+
+ });
