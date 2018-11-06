@@ -125,23 +125,17 @@ nav .contact-item {
   background-image: linear-gradient(0deg, #ffffff 5%, #f2e4d9 100%);
   z-index: -100; }
 
-.landing-page .hero-content {
-  position: relative;
-  text-align: center;
+.landing-page .landing-page .hero-content {
+  padding-top: 100px;
   color: #FFF; }
-  .landing-page .hero-content .centered-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .landing-page .hero-content .centered-content h1 {
-      font-size: 1.2rem; }
-    .landing-page .hero-content .centered-content p {
-      font-size: 2.7rem;
-      line-height: 1.2; }
-    .landing-page .hero-content .centered-content button {
-      color: #C08656;
-      border-radius: 18px; }
+  .landing-page .landing-page .hero-content .centered-content h1 {
+    font-size: 1.2rem; }
+  .landing-page .landing-page .hero-content .centered-content p {
+    font-size: 2.7rem;
+    line-height: 1.2; }
+  .landing-page .landing-page .hero-content .centered-content button {
+    color: #C08656;
+    border-radius: 18px; }
 
 .landing-page .tooth-brush img {
   border-radius: 12px;
@@ -394,6 +388,8 @@ nav .contact-item {
       color: #000; }
 
 @media (max-width: 575px) {
+  .tooth-brush img {
+    display: none; }
   .rectangle-bright,
   .rectangle-news,
   .rectangle-dark {
@@ -409,6 +405,8 @@ nav .contact-item {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
+  .tooth-brush img {
+    display: none; }
   .rectangle-bright,
   .rectangle-news,
   .rectangle-dark {
@@ -435,6 +433,23 @@ nav .contact-item {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .landing-page .hero-content {
+    position: relative;
+    text-align: center;
+    color: #FFF; }
+    .landing-page .hero-content .centered-content {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .landing-page .hero-content .centered-content h1 {
+        font-size: 1.2rem; }
+      .landing-page .hero-content .centered-content p {
+        font-size: 2.7rem;
+        line-height: 1.2; }
+      .landing-page .hero-content .centered-content button {
+        color: #C08656;
+        border-radius: 18px; }
   .burger-menu {
     display: none; }
   /* services section */
@@ -486,6 +501,23 @@ nav .contact-item {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .landing-page .hero-content {
+    position: relative;
+    text-align: center;
+    color: #FFF; }
+    .landing-page .hero-content .centered-content {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .landing-page .hero-content .centered-content h1 {
+        font-size: 1.2rem; }
+      .landing-page .hero-content .centered-content p {
+        font-size: 2.7rem;
+        line-height: 1.2; }
+      .landing-page .hero-content .centered-content button {
+        color: #C08656;
+        border-radius: 18px; }
   .burger-menu {
     display: none; }
   /* services section */

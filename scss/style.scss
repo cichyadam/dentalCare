@@ -177,33 +177,27 @@ nav {
 }
 
 .landing-page {
-    .hero-content {
-        position: relative;
-        text-align: center;
-        color: $white;
-
-        .centered-content {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-            h1 {
-                font-size: 1.2rem;
-            }
-
-            p {
-                font-size: 2.7rem;
-                line-height: 1.2;
-            }
-
-            button {
-                color: $gold;
-                border-radius: 18px;
+    .landing-page{
+        .hero-content {
+            padding-top: 100px;
+            color: $white;    
+            .centered-content {
+                h1 {
+                    font-size: 1.2rem;
+                }
+    
+                p {
+                    font-size: 2.7rem;
+                    line-height: 1.2;
+                }
+    
+                button {
+                    color: $gold;
+                    border-radius: 18px;
+                }
             }
         }
     }
-
     .tooth-brush {
         img {
             border-radius: 12px;
@@ -588,6 +582,12 @@ nav {
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
 
+    .tooth-brush{
+        img{
+            display: none;
+        }
+    }
+
     .rectangle-bright,
     .rectangle-news,
     .rectangle-dark {
@@ -617,6 +617,12 @@ nav {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
+
+    .tooth-brush{
+        img{
+            display: none;
+        }
+    }
 
     .rectangle-bright,
     .rectangle-news,
@@ -668,6 +674,34 @@ nav {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .landing-page{
+        .hero-content {
+            position: relative;
+            text-align: center;
+            color: $white;
+    
+            .centered-content {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+    
+                h1 {
+                    font-size: 1.2rem;
+                }
+    
+                p {
+                    font-size: 2.7rem;
+                    line-height: 1.2;
+                }
+    
+                button {
+                    color: $gold;
+                    border-radius: 18px;
+                }
+            }
+        }
+    }
     .burger-menu {
         display: none;
 
@@ -778,6 +812,34 @@ nav {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    .landing-page{
+        .hero-content {
+            position: relative;
+            text-align: center;
+            color: $white;
+    
+            .centered-content {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+    
+                h1 {
+                    font-size: 1.2rem;
+                }
+    
+                p {
+                    font-size: 2.7rem;
+                    line-height: 1.2;
+                }
+    
+                button {
+                    color: $gold;
+                    border-radius: 18px;
+                }
+            }
+        }
+    }
     .burger-menu {
         display: none;
     }
