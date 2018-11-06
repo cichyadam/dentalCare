@@ -7,6 +7,9 @@
   font-family: "Signika", sans-serif;
   font-weight: 300; }
 
+body {
+  overflow-x: hidden; }
+
 .gold {
   color: #C08656; }
 
@@ -249,6 +252,9 @@ nav .contact-item {
   z-index: -1; }
 
 /* team section */
+#team {
+  display: none; }
+
 .card {
   margin: 0 auto;
   border: none;

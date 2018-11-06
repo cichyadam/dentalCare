@@ -21,7 +21,9 @@ sans-serif;
     font-family: $signika;
     font-weight: 300;
 }
-
+body{
+    overflow-x: hidden;
+}
 .gold {
     color: $gold;
 }
@@ -356,7 +358,9 @@ nav {
 }
 
 /* team section */
-
+#team{
+    display: none;
+}
 .card {
     margin: 0 auto;
     border: none;
