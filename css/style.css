@@ -400,6 +400,8 @@ nav .contact-item {
       border-radius: 18px; }
   .landing-page .tooth-brush img {
     display: none; }
+  .newsletter .input-group .input-group-btn button {
+    width: 31%; }
   .rectangle-bright,
   .rectangle-news,
   .rectangle-dark {
