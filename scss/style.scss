@@ -177,9 +177,7 @@ nav {
 }
 
 .landing-page {
-    .landing-page{
         .hero-content {
-            padding-top: 100px;
             color: $white;    
             .centered-content {
                 h1 {
@@ -206,7 +204,7 @@ nav {
 
         }
     }
-}
+
 
 /* decoration elements */
 .rectangle-dark {
@@ -581,12 +579,17 @@ nav {
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
-
-    .tooth-brush{
-        img{
-            display: none;
+    .landing-page{
+        .hero-content{
+            margin-top: 100px;
+        }
+        .tooth-brush{
+            img{
+                display: none;
+            }
         }
     }
+   
 
     .rectangle-bright,
     .rectangle-news,
@@ -617,13 +620,16 @@ nav {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
-
-    .tooth-brush{
-        img{
-            display: none;
+    .landing-page{
+        .hero-content{
+            margin-top: 100px;
+        }
+        .tooth-brush{
+            img{
+                display: none;
+            }
         }
     }
-
     .rectangle-bright,
     .rectangle-news,
     .rectangle-dark {
