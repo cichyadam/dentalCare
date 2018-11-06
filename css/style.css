@@ -388,7 +388,16 @@ nav .contact-item {
 
 @media (max-width: 575px) {
   .landing-page .hero-content {
-    margin-top: 100px; }
+    margin-top: 100px;
+    color: #FFF; }
+    .landing-page .hero-content .centered-content h1 {
+      font-size: 1.2rem; }
+    .landing-page .hero-content .centered-content p {
+      font-size: 2.7rem;
+      line-height: 1.2; }
+    .landing-page .hero-content .centered-content button {
+      color: #C08656;
+      border-radius: 18px; }
   .landing-page .tooth-brush img {
     display: none; }
   .rectangle-bright,
@@ -407,7 +416,16 @@ nav .contact-item {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
   .landing-page .hero-content {
-    margin-top: 100px; }
+    margin-top: 100px;
+    color: #FFF; }
+    .landing-page .hero-content .centered-content h1 {
+      font-size: 1.2rem; }
+    .landing-page .hero-content .centered-content p {
+      font-size: 2.7rem;
+      line-height: 1.2; }
+    .landing-page .hero-content .centered-content button {
+      color: #C08656;
+      border-radius: 18px; }
   .landing-page .tooth-brush img {
     display: none; }
   .rectangle-bright,
